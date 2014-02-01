@@ -187,6 +187,9 @@ content: '\201D';
 #copyrights{border-top:3px solid #CCC;border-bottom:3px solid #CCC;}
 #copyrights p{ float:left; margin:10px 15px 0px 0px;}
 
+#menu-footer {
+float:left; margin:10px 15px 0px 0px;
+}
 .resize { position:fixed;
 bottom:0px;
 right:0px;
