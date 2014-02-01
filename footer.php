@@ -1,7 +1,7 @@
 <!-- Footer Element Starts Here -->
 <footer id="copyrights">
 
- <p><small>© 2012 <a href="http://www.dzyngiri.com/" target="_blank">Original HTML by Dzyngiri</a></small></p>
+ <p><small>&copy; 2014 <a href="http://www.dzyngiri.com/" target="_blank">Original HTML by Dzyngiri</a></small></p>
  	<?php 
 
 		// first let's get our nav menu using the regular wp_nav_menu() function with special parameters
