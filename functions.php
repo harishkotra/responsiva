@@ -38,4 +38,15 @@ function register_responsiva_menus() {
   );
 }
 add_action( 'init', 'register_responsiva_menus' );
+
+register_sidebar(array(
+  'name' => __( 'Main Sidebar' ),
+  'id' => 'main-sidebar',
+  'description' => __( 'Widgets in this area will be shown on the main sidebar.' ),
+  'before_title' => '<h1>',
+  'after_title' => '</h1>',
+  'before_widget' => '<li id="%1$s" class="widget %2$s">',
+  'after_widget'  => '</li>'
+));
+
 ?>
