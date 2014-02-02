@@ -176,7 +176,8 @@ Main Styles
 	padding: 10px;
 	width:90%;
 }
-.sidebar li{ padding:5px 0px;}
+.sidebar li{ padding:5px 0px; list-style: none;}
+
 blockquote{ padding:10px; margin:0px 0px; border-bottom:1px solid #dedede;}
 blockquote:before {
 content: '\201C';
