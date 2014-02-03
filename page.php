@@ -1,0 +1,26 @@
+<?php get_header(); ?>
+	<!-- Div wrapper2 starts here -->
+	<div id="Wrapper2">
+		<!-- Sidebar Element Starts Here -->
+		<?php get_sidebar() ?>
+			
+		<!-- Article Element Starts Here -->
+		<article id="contents">
+
+			<?php the_post(); ?>
+                 
+                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <h1 class="entry-title"><?php the_title(); ?></h1>
+                    <div class="entry-content">
+						<?php the_content(); ?>
+						<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'responsiva' ) . '&after=</div>') ?>                 
+						<?php edit_post_link( __( 'Edit', 'responsiva' ), '<span class="edit-link">', '</span>' ) ?>
+                    </div><!-- .entry-content -->
+                </div><!-- #post-<?php the_ID(); ?> -->           
+						             
+				<?php if ( get_post_custom_values('comments') ) comments_template() // Add a custom field with Name and Value of "comments" to enable comments on this page ?>
+		</article>
+		<!-- Article Element Ends Here -->
+	</div>
+	<!-- Div wrapper2 ends here -->
+<?php get_footer(); ?>
